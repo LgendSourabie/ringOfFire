@@ -6,9 +6,14 @@
       src="./../../assets/img/card_cover.png" />
     <img
       class="top-card"
-      [class.pick-card]="pickCardAnimation"
       style="right: 25px"
       (click)="pickCard()"
       src="./../../assets/img/card_cover.png" />
+    <img
+      *ngIf="pickCardAnimation"
+      style="right: 25px"
+      class="pick-card"
+      (click)="pickCard()"
+      src="./../../assets/img/ace_1.png" />
   </div>
 </div>
