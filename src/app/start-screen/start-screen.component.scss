@@ -1,0 +1,31 @@
+@import "./../../styles.scss";
+
+.start-screen {
+  //   background-color: #404040;
+  background-color: rgb(192, 139, 15);
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  @include displayFlex();
+  > img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.start-label-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 95px;
+  @include displayFlex(unset, center, unset);
+  > img {
+    // width: 40vw;
+    width: 25vw;
+    height: auto;
+    &:hover {
+      filter: brightness(1.25);
+      cursor: pointer;
+    }
+  }
+}
