@@ -11,23 +11,23 @@
     <img
       [ngStyle]="{ 'right.px': i * 5 }"
       *ngFor="let c of [0, 1, 2, 3]; let i = index"
-      src="./../../assets/img/card_cover.png" />
+      src="assets/img/card_cover.png" />
     <img
       class="top-card"
       style="right: 25px"
       (click)="pickCard()"
-      src="./../../assets/img/card_cover.png" />
+      src="assets/img/card_cover.png" />
     <img
       class="played-card"
       *ngFor="let card of game.playedCard"
-      src="./../../assets/img/{{ card }}"
+      src="assets/img/{{ card }}"
       alt="" />
     <img
       *ngIf="pickCardAnimation"
       style="right: 25px"
       class="pick-card"
       (click)="pickCard()"
-      src="./../../assets/img/{{ currentCard }}" />
+      src="assets/img/{{ currentCard }}" />
   </div>
 </div>
 <app-game-info [card]="currentCard" class="pin-bottom"></app-game-info>
